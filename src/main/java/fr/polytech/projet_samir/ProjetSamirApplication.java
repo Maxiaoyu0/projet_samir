@@ -38,6 +38,11 @@ public class ProjetSamirApplication {
     public List<Book>   getBooks(){
         return bookDao.findAll();
     }
+
+    @GetMapping("/")
+    public void syso(){
+        System.out.println("hello jenkins");
+    }
     public static void main(String[] args) {
         SpringApplication.run(ProjetSamirApplication.class, args);
     }
